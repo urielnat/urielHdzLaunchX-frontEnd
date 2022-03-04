@@ -1,0 +1,90 @@
+
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+<h2>Realiza tu pedido de pastel</h2>
+
+
+<form >
+  <fieldset>
+    <legend>Información personal:</legend>
+    <label for="fNombre">Nombre:</label><br>
+    <input required type="text" id="fNombre" name="fNombre" ><br>
+    <label for="Telefono">Teléfono:</label><br>
+    <input required type="text" id="Telefono" name="Telefono" ><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input required type="email" id="email" name="email" ><br>
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea required type="comentarios" id="comentarios" name="comentarios" ></textarea><br>
+  </fieldset>
+  <fieldset>
+    <legend>Bizcochos:</legend>
+      <input required type="radio" id="Vainilla" name="bizcocho" value="Vainilla">
+      <label for="Vainilla">Vainilla</label><br>
+      <input type="radio" id="Chocolate" name="bizcocho" value="Chocolate">
+      <label for="Chocolate">Chocolate</label><br>
+      <input type="radio" id="Marmoleado" name="bizcocho" value="Marmoleado">
+      <label for="Marmoleado">Marmoleado</label><br>
+      <input type="radio" id="Naranja" name="bizcocho" value="Naranja">
+      <label for="Naranja">Naranja</label><br>
+      <input type="radio" id="Red Velvet" name="bizcocho" value="Red Velvet">
+      <label for="Red Velvet">Red Velvet</label><br>
+      <input type="radio" id="Almendra" name="bizcocho" value="Almendra">
+      <label for="Almendra">Almendra</label><br>
+      <input type="radio" id="Limon" name="bizcocho" value="Limon">
+      <label for="Limon">Limón</label><br>
+
+      
+  </fieldset>
+  <fieldset>
+    <legend>Rellenos:</legend>
+    <label for="relleno">Elige el relleno:</label>
+    <select name="relleno" id="relleno">
+      <optgroup label="Mermeladas">
+        <option value="Fresa" >Fresa</option>
+        <option value="Durazno">Durazno</option>
+        <option value="Guayaba">Guayaba</option>
+        <option value="Frambuesa">Frambuesa</option>
+      </optgroup>
+      <optgroup label="Cremas">
+        <option value="Fresa" >Fresa</option>
+        <option value="Durazno">Durazno</option>
+        <option value="Café">Café</option>
+        <option value="Vainilla">Vainilla</option>
+      </optgroup>
+    </select>    
+  </fieldset>
+  <fieldset>
+    <legend>Coberturas y toppings:</legend>
+    <label for="cobertura">Elige la cobertura:</label>
+    <select name="cobertura" id="cobertura">
+        <option value="Betún de nata" >Betún de nata</option>
+        <option value="Betún de chocolate">Betún de chocolate</option>
+        <option value="Betún de vainilla">Betún de vainilla</option>
+        <option value="Buttercream">Buttercream</option>
+        <option value="Queso crema">Queso crema</option>
+    </select> 
+    <br>
+    <br>
+    <label >Elige los toppings:</label><br>
+    <input type="checkbox" id="Brownies" name="Brownies" value="Brownies">
+    <label for="Brownies"> Brownies</label><br>
+    <input type="checkbox" id="cobertura_pastel" name="cobertura_pastel" value="pastelImposible">
+    <label for="cobertura_pastel">cobertura pastel imposible</label><br>
+    <input type="checkbox" id="Fruta" name="Fruta" value="Fruta">
+    <label for="Fruta">Fruta de temporada</label><br>
+    <input type="checkbox" id="Ganage" name="Ganage" value="Ganage">
+    <label for="Ganage"> Ganage</label><br>
+    <input type="checkbox" id="Nutella" name="Nutella" value="Nutella">
+    <label for="Nutella"> Nutella</label><br>
+    <input type="checkbox" id="CreamCarlota" name="CreamCarlota" value="CreamCarlota">
+    <label for="CreamCarlota"> Cream Carlota</label><br>
+  </fieldset>
+  <br>
+  <input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>

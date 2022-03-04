@@ -1,0 +1,56 @@
+
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+<h2>Realiza tu pedido de pastel</h2>
+
+
+<form  >
+  <fieldset>
+    <legend>Información personal:</legend>
+    <label for="fNombre">Nombre:</label><br>
+    <input required type="text" id="fNombre" name="fNombre" ><br>
+    <label for="Telefono">Teléfono:</label><br>
+    <input required type="text" id="Telefono" name="Telefono" ><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input required type="email" id="email" name="email" ><br>
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea required type="comentarios" id="comentarios" name="comentarios" ></textarea><br>
+  </fieldset>
+  <fieldset>
+    <legend>Pastel:</legend>
+    <label for="DropDownPastel">Tipo pastel:</label><br>
+    <select required ID="DropDownPastel" Height="18px" Width="187px">
+        <option Value="1">Milky way</option>
+        <option Value="2">Moka</option>
+        <option Value="3">Nuez con chocolate</option>
+        <option Value="4">Tradicional de chocolate</option>
+        <option Value="5">Zanahoria</option>
+        <option Value="6">Vainilla</option>
+        <option Value="7">Alemán</option>
+        <option Value="8">Cajeta</option>
+        <option Value="9">Chesscake de cereza</option>
+        <option Value="10">Durazno</option>
+    </select>
+    <label for="DropDownCantidad">Cantidad:</label>
+    <select required ID="DropDownCantidad" Height="18px" Width="187px">
+        <option Value="1">1</option>
+        <option Value="2">2</option>
+        <option Value="3">3</option>
+        <option Value="4">4</option>
+        <option Value="5">5</option>
+        <option Value="6">6</option>
+        <option Value="7">7</option>
+        <option Value="8">8</option>
+        <option Value="9">9</option>
+        <option Value="10">10</option>
+    </select>
+  </fieldset>
+  <br>
+  <input  type="submit" style=" height: 30px;"  value="Enviar">
+
+</form>
+
+</body>
+</html>
