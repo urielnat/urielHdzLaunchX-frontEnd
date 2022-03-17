@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+</head>
+<body>
+    <div id="fondo">
+        <div class="container">
+
+            <div class="tercio centro">
+                <div class="bloque" style="height: 66%;">
+                    
+                    <div id="imgContainer" class="imgContainer">
+                        
+                        <img  class="pokemon"  id="pokeImg" >
+                        <div id ="loader" class="pokebola"></div>
+                    </div>
+                </div>
+                <div class="bloque" style="height: 33%;">
+
+                    <div class="inputContainer">
+                        <button class="buscar" onclick="fetchPokemon()">Buscar</button>
+        
+                            <input class="pokeInput" placeholder="NOMBRE" id ="pokeName" type="text">
+
+                     </div>
+                </div>
+
+                
+            </div>
+
+            <div class="tercio centro">
+    
+            <div class="bloque" style="height: 90%; width: 100%;">
+
+                <div id="myPlot" class="derecha stats"> 
+
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                </div>
+            </div>   
+
+            <div class="bloque" style="height: 10%;">
+
+                <div class="inputContainer">
+    
+                        <div class="pokeText" >
+                            <div id="titulo"><label></label></div>
+                            <label id="t1"></label><br><label id="t2"></label>
+                        </div>
+
+                        <div class="pokeText2" >
+                            <!-- <div id="titulo"><label>Tipo(s)</label></div> -->
+                            <br>
+                            <label id="t3"></label><br><label id="t4"></label>
+                        </div>
+
+                 </div>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+<footer>
+    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script type="text/javascript" src="./pokedex.js"></script>
+</footer>
+</html>

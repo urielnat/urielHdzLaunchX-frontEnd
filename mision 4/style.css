@@ -1,0 +1,211 @@
+#fondo{
+    width: 80%;
+    height: 100vh;
+    background-image: url(img/pokedex.png);
+    background-size: cover;
+    position: relative;
+
+}
+
+
+.tercio{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    }
+
+
+ .centro{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }   
+
+
+ .espacio{
+    display: flex;
+   
+    flex-direction: column;
+}   
+
+
+ .container{
+     display: flex;
+     width: 80%;
+     height: 100vh;
+ }
+ 
+
+ .stats{
+     width: 370px;
+     height: 180px;
+     position: absolute;
+     left: 690px;
+     bottom: 400px;
+
+
+ }
+
+ .derecha{
+     float: right;
+ }
+
+
+ .pokemon{
+    height: 250px;
+    width: 250px;
+    display:none;
+    position:absolute;
+    bottom: 55px;
+    right:40px;
+
+}
+
+ .pokebola{
+    height: 100px;
+    width: 100px;
+    display:none;
+    position:absolute;
+    bottom: 120px;
+    right:110px;
+    background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+    border-radius: 50%;
+    border: 8px solid black;
+    animation: spin 1s linear infinite;
+
+}
+
+
+.imgContainer{
+    height: 100%;
+    width: 450px;
+    display: flex;
+    position:relative;
+
+
+}
+ 
+
+  .pokebola::before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100px;
+    background: black;
+    top: 50px;
+    transform: translatey(-50%);
+  }
+  
+  .pokebola::after {
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: white;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+  
+  }
+  
+  /* Spin Animation */
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+#loader{
+display:none;
+}
+  
+#loader.active{
+display:block;
+}
+
+
+#pokeImg.active{
+display:block;
+    
+}
+
+
+.pokeInput{
+    height: 80px;
+    width: 180px;
+    background-color: transparent;
+    font-size: larger;
+    position:absolute;
+    bottom: 50px;
+    right:130px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
+}
+
+
+
+.inputContainer{
+    height: 100%;
+    width: 450px;
+    position: relative;
+}
+
+
+.pokeText{
+    height: 80px;
+    width: 160px;
+    font-size: larger;
+    position:absolute;
+    bottom: 50px;
+    right:50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+
+.pokeText2{
+    height: 80px;
+    width: 160px;
+    font-size: larger;
+    position:absolute;
+    bottom: 50px;
+    left:430px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.buscar{
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    position:absolute;
+    bottom: 185px;
+    right:220px;
+    cursor: pointer;
+}
+
+#titulo{
+    display: block;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+
+
+
+
+
+
